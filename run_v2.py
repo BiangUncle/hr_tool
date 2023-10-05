@@ -2,6 +2,7 @@ from src.table import *
 from src.config import *
 from src.constant import *
 import os
+import sys
 
 
 def RunAttendance(root='./'):
@@ -55,4 +56,22 @@ def RunOverWork(root='./'):
     output.to_excel("./output/over_work.xlsx")
 
 
-RunAttendance("./files/")
+
+def Run():
+    args = sys.argv
+    if len(args) != 3 and len(args) != 2:
+        assert False, "参数传递错误"
+
+    mission = args[1]
+    root = './'
+    if len(args) == 3:
+        root = args[2]
+
+    if mission == "att":
+        RunAttendance(root)
+    elif mission == "ow":
+        RunOverWork("./files/")
+    else:
+        assert False, "错误的参数"
+
+Run()
