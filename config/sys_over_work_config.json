@@ -1,0 +1,19 @@
+{
+    "base": {
+        "header": 1,
+        "column_map": {
+            "applier": "员工姓名",
+            "holiday": "班后/周末/法定假加班",
+            "time": "时长：H"
+        },
+        "sheet_name": "Sheet0",
+        "file_name_prefix": "sys"
+    },
+    "over_work": {
+        "holiday_map": {
+            "班后加班": "平时加班",
+            "周末加班": "休息日加班",
+            "节假日加班": "节假日加班"
+        }
+    }
+}

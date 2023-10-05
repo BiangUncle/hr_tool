@@ -1,0 +1,34 @@
+{
+    "file_name_prefix": "sys_",
+    "header": 0,
+    "columns": [
+        "申请人",
+        "休假类别",
+        "休假时长",
+        "开始时间",
+        "结束时间"
+    ],
+    "biz_map": {
+        "name": "加班员工",
+        "type": "休假类别",
+        "count": "休假时长",
+        "start_time": "开始时间",
+        "end_time": "结束时间"
+    },
+    "sheet_name": "Sheet0",
+    "tran": {
+        "value_to_number": {
+            "病假": {
+                "detail": "扣薪病假",
+                "count": "病假天数"
+            },
+            "事假": {
+                "detail": "事假",
+                "count": "事假天数"
+            }
+        },
+        "value_to_value": {
+            "申请人": "姓名"
+        }
+    }
+}

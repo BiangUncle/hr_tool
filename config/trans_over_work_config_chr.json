@@ -1,0 +1,27 @@
+{
+    "excel_input": {
+        "file_name_prefix": "trans_",
+        "sheet_name": "Sheet0",
+        "header": 1,
+        "column_map": {
+            "applier": "员工姓名",
+            "holiday": "加班类别",
+            "time": "时长：H"
+        }
+    },
+    "excel_output": {
+        "column_map": {
+            "applier": "员工姓名",
+            "holiday1": "平时加班",
+            "holiday2": "休息日加班",
+            "holiday3": "节假日加班"
+        }
+    },
+    "relationship": {
+        "value_to_column": {
+            "班后加班": "holiday1",
+            "周末加班": "holiday2",
+            "节假日加班": "holiday3"
+        }
+    }
+}

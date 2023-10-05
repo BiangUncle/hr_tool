@@ -1,0 +1,25 @@
+{
+    "base": {
+        "header": 1,
+        "column_map": {
+            "applier": "员工姓名",
+            "holiday": "加班类别",
+            "time": "时长：H"
+        },
+        "sheet_name": "Sheet0",
+        "file_name_prefix": "trans_"
+    },
+    "over_work": {
+        "output_column": [
+            "员工姓名",
+            "平时加班",
+            "休息日加班",
+            "节假日加班"
+        ],
+        "holiday_map": {
+            "班后加班": "平时加班",
+            "周末加班": "休息日加班",
+            "节假日加班": "节假日加班"
+        }
+    }
+}
