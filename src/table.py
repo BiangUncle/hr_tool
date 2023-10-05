@@ -19,7 +19,7 @@ class Table:
         self.biz_map = {}
         self.resolvers = []
         self.default_set_map = {}
-
+        self.root = ''
 
     # 加载输入配置文件
     def load_config(self, config_name: str) -> dict:

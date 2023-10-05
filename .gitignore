@@ -1,3 +1,4 @@
-*.xlsx
-__pycache__
-/output
+*.xlsx  # 数据文件不上传
+__pycache__ # python 运行缓存不上传
+output/ # 输出文件夹不上传
+files/   # 用户文件不上传
